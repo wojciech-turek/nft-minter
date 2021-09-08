@@ -16,7 +16,7 @@ using Counters for Counters.Counter;
         _tokenIds.increment();
 
         uint256 newItemId = _tokenIds.current();
-        _mint(player, newItemId);
+        _mint(owner, newItemId);
         _setTokenURI(newItemId, tokenURI);
 
         return newItemId;
